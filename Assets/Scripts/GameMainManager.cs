@@ -6,7 +6,6 @@ using RVO;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Assertions.Comparers;
-using UnityEngine.Experimental.UIElements;
 using Random = System.Random;
 using Vector2 = RVO.Vector2;
 
@@ -70,7 +69,7 @@ public class GameMainManager : SingletonBehaviour<GameMainManager>
     private void Update()
     {
         UpdateMousePosition();
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButton(0))
         {
             if (Input.GetKey(KeyCode.Delete))
             {
